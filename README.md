@@ -4,7 +4,7 @@
 
 <br />
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20App-orange?style=for-the-badge&logo=vercel)](https://recipe-cards-zubair.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20App-orange?style=for-the-badge&logo=vercel)](https://parallax-labs-recipe-cards.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
