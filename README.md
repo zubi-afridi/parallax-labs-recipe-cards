@@ -1,4 +1,4 @@
-# RecipeHub — Premium Recipe Cards
+# RecipeHub :Premium Recipe Cards
 
 > A production-quality, interactive recipe cards application built as a Frontend Internship Assessment. Designed to demonstrate modern engineering standards in component architecture, animation, accessibility, and visual design.
 
@@ -35,9 +35,9 @@ The project was built to satisfy the requirements of a frontend internship asses
 - **Staggered Entrance Animations** : Hero and card sections animate in sequence on page load using Motion v12.
 - **Hover Micro-interactions** : Cards lift vertically, images zoom, and buttons glow on hover.
 - **Fully Responsive** : 1 column on mobile → 2 on tablet → 3 on desktop. Works from 320px to 4K.
-- **Accessibility (A11y)** — Semantic HTML, `aria-expanded`, `aria-controls`, keyboard navigation (`Enter`/`Space`), and visible focus rings.
-- **Next.js Image Optimization** — Remote Unsplash images are served via `next/image` with lazy loading and responsive sizing.
-- **Sticky Header** — Navigation bar remains visible at the top of the page while scrolling using CSS `position: sticky`.
+- **Accessibility (A11y)** : Semantic HTML, `aria-expanded`, `aria-controls`, keyboard navigation (`Enter`/`Space`), and visible focus rings.
+- **Next.js Image Optimization** : Remote Unsplash images are served via `next/image` with lazy loading and responsive sizing.
+- **Sticky Header** : Navigation bar remains visible at the top of the page while scrolling using CSS `position: sticky`.
 
 ---
 
@@ -126,15 +126,15 @@ npm run start
 
 Next.js 16 (App Router) defaults every component to a Server Component. To minimize the client-side JavaScript bundle, only components that require interactivity were marked `"use client"`:
 
-| Component              | Type       | Reason                                                        |
-| ---------------------- | ---------- | ------------------------------------------------------------- |
-| `BackgroundDecoration` | **Server** | Static decorative HTML — no state                             |
-| `Header`               | **Server** | Static layout — `ThemeToggle` handles its own client boundary |
-| `Hero`                 | **Client** | Uses Motion entrance animations                               |
-| `RecipeGrid`           | **Client** | Uses Motion `whileInView` scroll trigger                      |
-| `RecipeCard`           | **Client** | Manages expand/collapse state with `useState`                 |
-| `Footer`               | **Server** | Static layout — no interactivity                              |
-| `ThemeToggle`          | **Client** | Manages DOM class toggle and `localStorage`                   |
+| Component              | Type       | Reason                                                      |
+| ---------------------- | ---------- | ----------------------------------------------------------- |
+| `BackgroundDecoration` | **Server** | Static decorative HTML no state                             |
+| `Header`               | **Server** | Static layout `ThemeToggle` handles its own client boundary |
+| `Hero`                 | **Client** | Uses Motion entrance animations                             |
+| `RecipeGrid`           | **Client** | Uses Motion `whileInView` scroll trigger                    |
+| `RecipeCard`           | **Client** | Manages expand/collapse state with `useState`               |
+| `Footer`               | **Server** | Static layout no interactivity                              |
+| `ThemeToggle`          | **Client** | Manages DOM class toggle and `localStorage`                 |
 
 ### Animation Strategy
 
