@@ -28,13 +28,13 @@ The project was built to satisfy the requirements of a frontend internship asses
 
 ## ✨ Features
 
-- **5 Static Gourmet Recipes** — Served from a typed TypeScript data file. No backend, no API, no database.
-- **Interactive Recipe Cards** — Click any card to expand or collapse its ingredient list with smooth height animations.
-- **Dark / Light Mode** — Toggle button in the navbar switches between a rich dark navy theme and a warm off-white light theme. Preference is saved in `localStorage`.
-- **Premium Glassmorphism UI** — Semi-transparent frosted glass cards with soft glowing borders and depth shadows.
-- **Staggered Entrance Animations** — Hero and card sections animate in sequence on page load using Motion v12.
-- **Hover Micro-interactions** — Cards lift vertically, images zoom, and buttons glow on hover.
-- **Fully Responsive** — 1 column on mobile → 2 on tablet → 3 on desktop. Works from 320px to 4K.
+- **5 Static Gourmet Recipes** : Served from a typed TypeScript data file. No backend, no API, no database.
+- **Interactive Recipe Cards** : Click any card to expand or collapse its ingredient list with smooth height animations.
+- **Dark / Light Mode** : Toggle button in the navbar switches between a rich dark navy theme and a warm off-white light theme. Preference is saved in `localStorage`.
+- **Premium Glassmorphism UI** : Semi-transparent frosted glass cards with soft glowing borders and depth shadows.
+- **Staggered Entrance Animations** : Hero and card sections animate in sequence on page load using Motion v12.
+- **Hover Micro-interactions** : Cards lift vertically, images zoom, and buttons glow on hover.
+- **Fully Responsive** : 1 column on mobile → 2 on tablet → 3 on desktop. Works from 320px to 4K.
 - **Accessibility (A11y)** — Semantic HTML, `aria-expanded`, `aria-controls`, keyboard navigation (`Enter`/`Space`), and visible focus rings.
 - **Next.js Image Optimization** — Remote Unsplash images are served via `next/image` with lazy loading and responsive sizing.
 - **Sticky Header** — Navigation bar remains visible at the top of the page while scrolling using CSS `position: sticky`.
@@ -140,11 +140,11 @@ Next.js 16 (App Router) defaults every component to a Server Component. To minim
 
 Motion v12 (`motion/react`) was used throughout. Key patterns:
 
-- **Stagger children** — `containerVariants` with `staggerChildren: 0.15` cascades child animations sequentially.
-- **Scroll trigger** — `whileInView` on the grid fires animations once when cards scroll into the viewport (`viewport: { once: true }`).
-- **Height accordion** — `AnimatePresence` with `height: 0 → "auto"` handles smooth ingredient panel expansion without needing a fixed pixel height.
-- **Icon rotation** — The chevron SVG uses `animate={{ rotate: isExpanded ? 180 : 0 }}` for a fluid arrow flip.
-- **Hover lift** — Cards use `whileHover={{ y: -6 }}` to create a subtle elevation effect.
+- **Stagger children** : `containerVariants` with `staggerChildren: 0.15` cascades child animations sequentially.
+- **Scroll trigger** : `whileInView` on the grid fires animations once when cards scroll into the viewport (`viewport: { once: true }`).
+- **Height accordion** : `AnimatePresence` with `height: 0 → "auto"` handles smooth ingredient panel expansion without needing a fixed pixel height.
+- **Icon rotation** : The chevron SVG uses `animate={{ rotate: isExpanded ? 180 : 0 }}` for a fluid arrow flip.
+- **Hover lift** : Cards use `whileHover={{ y: -6 }}` to create a subtle elevation effect.
 
 ### Dark / Light Mode
 
