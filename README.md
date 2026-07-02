@@ -14,7 +14,7 @@
 
 ## 🔗 Live Demo
 
-**[https://recipe-cards-zubair.vercel.app](https://recipe-cards-zubair.vercel.app)**
+**[https://recipe-cards-zubair.vercel.app](https://parallax-labs-recipe-cards.vercel.app/)**
 
 ---
 
@@ -43,15 +43,15 @@ The project was built to satisfy the requirements of a frontend internship asses
 
 ## 🛠️ Technology Stack
 
-| Technology | Version | Purpose |
-|---|---|---|
-| **Next.js** | 16.2.10 | React framework with App Router |
-| **React** | 19.2.4 | UI component library |
-| **TypeScript** | 5.x | Static typing and type safety |
-| **Tailwind CSS** | v4 | Utility-first styling with custom `@theme` variables |
-| **Motion** (`motion/react`) | v12 | Animations — stagger, hover, accordion height, icon rotation |
-| **Geist Font** | — | Premium system font via `next/font/google` |
-| **ESLint** | 9.x | Code linting and quality checks |
+| Technology                  | Version | Purpose                                                      |
+| --------------------------- | ------- | ------------------------------------------------------------ |
+| **Next.js**                 | 16.2.10 | React framework with App Router                              |
+| **React**                   | 19.2.4  | UI component library                                         |
+| **TypeScript**              | 5.x     | Static typing and type safety                                |
+| **Tailwind CSS**            | v4      | Utility-first styling with custom `@theme` variables         |
+| **Motion** (`motion/react`) | v12     | Animations — stagger, hover, accordion height, icon rotation |
+| **Geist Font**              | —       | Premium system font via `next/font/google`                   |
+| **ESLint**                  | 9.x     | Code linting and quality checks                              |
 
 ---
 
@@ -126,15 +126,15 @@ npm run start
 
 Next.js 16 (App Router) defaults every component to a Server Component. To minimize the client-side JavaScript bundle, only components that require interactivity were marked `"use client"`:
 
-| Component | Type | Reason |
-|---|---|---|
-| `BackgroundDecoration` | **Server** | Static decorative HTML — no state |
-| `Header` | **Server** | Static layout — `ThemeToggle` handles its own client boundary |
-| `Hero` | **Client** | Uses Motion entrance animations |
-| `RecipeGrid` | **Client** | Uses Motion `whileInView` scroll trigger |
-| `RecipeCard` | **Client** | Manages expand/collapse state with `useState` |
-| `Footer` | **Server** | Static layout — no interactivity |
-| `ThemeToggle` | **Client** | Manages DOM class toggle and `localStorage` |
+| Component              | Type       | Reason                                                        |
+| ---------------------- | ---------- | ------------------------------------------------------------- |
+| `BackgroundDecoration` | **Server** | Static decorative HTML — no state                             |
+| `Header`               | **Server** | Static layout — `ThemeToggle` handles its own client boundary |
+| `Hero`                 | **Client** | Uses Motion entrance animations                               |
+| `RecipeGrid`           | **Client** | Uses Motion `whileInView` scroll trigger                      |
+| `RecipeCard`           | **Client** | Manages expand/collapse state with `useState`                 |
+| `Footer`               | **Server** | Static layout — no interactivity                              |
+| `ThemeToggle`          | **Client** | Manages DOM class toggle and `localStorage`                   |
 
 ### Animation Strategy
 
@@ -162,30 +162,30 @@ Tailwind v4's new `@theme` at-rule was used to register custom design tokens (e.
 
 ## 📝 Assumptions Made
 
-1. **No routing required** — The assessment asked for a single page of recipe cards, so no multi-page navigation was implemented.
-2. **Static images** — Recipe images are loaded from [Unsplash](https://unsplash.com) via their public CDN URLs. The `next.config.ts` file is configured with a remote pattern for `images.unsplash.com`.
-3. **No authentication** — The app is fully public with no login or user accounts.
-4. **Ingredient list as strings** — Ingredients are plain strings. No structured quantity/unit parsing was implemented as the assessment did not require it.
-5. **App icon** — A local `/ingredients.png` file is expected in the `public/` directory for the navbar and footer logo. This should be replaced with your own asset before deployment.
+1. **No routing required** : The assessment asked for a single page of recipe cards, so no multi-page navigation was implemented.
+2. **Static images** : Recipe images are loaded from [Unsplash](https://unsplash.com) via their public CDN URLs. The `next.config.ts` file is configured with a remote pattern for `images.unsplash.com`.
+3. **No authentication** : The app is fully public with no login or user accounts.
+4. **Ingredient list as strings** : Ingredients are plain strings. No structured quantity/unit parsing was implemented as the assessment did not require it.
+5. **App icon** : A local `/ingredients.png` file is expected in the `public/` directory for the navbar and footer logo. This should be replaced with your own asset before deployment.
 
 ---
 
 ## 🔮 Future Improvements
 
-- **Search & Filter** — Add a search bar and category tags to filter recipes by type (e.g., Meat, Pasta, Dessert).
-- **Recipe Detail Page** — Clicking a card navigates to a full recipe page with cooking steps and nutritional info.
-- **Ingredient Checklist** — Allow users to tick off ingredients as they cook, with progress stored in `localStorage`.
-- **Bookmark / Favourites** — Save favourite recipes locally with a heart icon toggle.
-- **Print Mode** — CSS `@media print` stylesheet for clean, paper-friendly ingredient lists.
-- **CMS Integration** — Replace the static data file with a headless CMS like Sanity or Contentful for dynamic content.
+- **Search & Filter** : Add a search bar and category tags to filter recipes by type (e.g., Meat, Pasta, Dessert).
+- **Recipe Detail Page** : Clicking a card navigates to a full recipe page with cooking steps and nutritional info.
+- **Ingredient Checklist** : Allow users to tick off ingredients as they cook, with progress stored in `localStorage`.
+- **Bookmark / Favourites** : Save favourite recipes locally with a heart icon toggle.
+- **Print Mode** : CSS `@media print` stylesheet for clean, paper-friendly ingredient lists.
+- **CMS Integration** : Replace the static data file with a headless CMS like Sanity or Contentful for dynamic content.
 
 ---
 
 ## 👤 Author
 
 **Zubair Khan**  
-Frontend Developer · [GitHub](https://github.com/zubair-khan) · [LinkedIn](https://linkedin.com/in/zubair-khan)
+Frontend Developer · [GitHub](https://github.com/zubi-afridi)
 
 ---
 
-*Built with ❤️ as a Frontend Internship Assessment.*
+_Built with ❤️ as a Frontend Internship Assessment._
